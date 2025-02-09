@@ -1,0 +1,28 @@
+--cpu Cortex-M3
+"openmv_stm32\startup_stm32f103xb.o"
+"openmv_stm32\main.o"
+"openmv_stm32\gpio.o"
+"openmv_stm32\dma.o"
+"openmv_stm32\usart.o"
+"openmv_stm32\stm32f1xx_it.o"
+"openmv_stm32\stm32f1xx_hal_msp.o"
+"openmv_stm32\stm32f1xx_hal_gpio_ex.o"
+"openmv_stm32\stm32f1xx_hal_tim.o"
+"openmv_stm32\stm32f1xx_hal_tim_ex.o"
+"openmv_stm32\stm32f1xx_hal_uart.o"
+"openmv_stm32\stm32f1xx_hal.o"
+"openmv_stm32\stm32f1xx_hal_rcc.o"
+"openmv_stm32\stm32f1xx_hal_rcc_ex.o"
+"openmv_stm32\stm32f1xx_hal_gpio.o"
+"openmv_stm32\stm32f1xx_hal_dma.o"
+"openmv_stm32\stm32f1xx_hal_cortex.o"
+"openmv_stm32\stm32f1xx_hal_pwr.o"
+"openmv_stm32\stm32f1xx_hal_flash.o"
+"openmv_stm32\stm32f1xx_hal_flash_ex.o"
+"openmv_stm32\stm32f1xx_hal_exti.o"
+"openmv_stm32\system_stm32f1xx.o"
+"openmv_stm32\openmv.o"
+--strict --scatter "openmv_stm32\openmv_stm32.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "openmv_stm32.map" -o openmv_stm32\openmv_stm32.axf

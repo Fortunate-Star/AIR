@@ -1,0 +1,119 @@
+<html>
+<body>
+<pre>
+<h1>礦ision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: μVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: A lenovo, A, LIC=6XJT4-FHLHS-UMT9A-1IBEQ-ISF4Z-XUYWR
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.39.0.0
+Toolchain Path:  D:\Keil5 MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      STLink\ST-LINKIII-KEIL_SWO.dll V3.2.0.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\lenovo\Desktop\代码\硬件I2C读写\Project.uvprojx
+Project File Date:  07/27/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\Keil5 MDK\ARM\ARMCC\Bin'
+Build target 'Target 1'
+compiling main.c...
+User\main.c(26): error:  #20: identifier "MPU_ID1" is undefined
+  	MPUID1 = MPU6050_GetID(MPU_ID1);				//鑾峰彇鑾峰彇绗竴涓狹PU6050鐨処D鍙?
+User\main.c(27): error:  #20: identifier "MPU_ID2" is undefined
+  	MPUID2 = MPU6050_GetID(MPU_ID2);				//鑾峰彇鑾峰彇绗簩涓狹PU6050鐨処D鍙?
+User\main.c: 0 warnings, 2 errors
+compiling HC_SR04.c...
+Hardware\MPU6050.h(11): error:  #147-D: declaration is incompatible with "void MPU6050_WriteReg(MPUID_typedef, uint8_t, uint8_t)"  (declared at line 10 of "Hardware\HC_SR04.h")
+  void MPU6050_WriteReg(ID_typedef MPU6050_ADDRESS, uint8_t RegAddress, uint8_t Data);
+Hardware\MPU6050.h(16): error:  #147-D: declaration is incompatible with "uint8_t MPU6050_GetID(MPUID_typedef)"  (declared at line 15 of "Hardware\HC_SR04.h")
+  uint8_t MPU6050_GetID(ID_typedef MPU6050_ADDRESS);
+Hardware\MPU6050.h(17): error:  #147-D: declaration is incompatible with "void MPU6050_GetData(MPUID_typedef, int16_t *, int16_t *, int16_t *, int16_t *, int16_t *, int16_t *)"  (declared at line 16 of "Hardware\HC_SR04.h")
+  void MPU6050_GetData(ID_typedef MPU6050_ADDRESS,int16_t *AccX, int16_t *AccY, int16_t *AccZ, 
+Hardware\HC_SR04.c(122): error:  #20: identifier "MPU6050_PWR_MGMT_1" is undefined
+  	MPU6050_WriteReg(MPU_ID1,MPU6050_PWR_MGMT_1, 0x01);				//电源管理寄存器1，取消睡眠模式，选择时钟源为X轴陀螺仪
+Hardware\HC_SR04.c(122): warning:  #188-D: enumerated type mixed with another type
+  	MPU6050_WriteReg(MPU_ID1,MPU6050_PWR_MGMT_1, 0x01);				//电源管理寄存器1，取消睡眠模式，选择时钟源为X轴陀螺仪
+Hardware\HC_SR04.c(123): error:  #20: identifier "MPU6050_PWR_MGMT_2" is undefined
+  	MPU6050_WriteReg(MPU_ID1,MPU6050_PWR_MGMT_2, 0x00);				//电源管理寄存器2，保持默认值0，所有轴均不待机
+Hardware\HC_SR04.c(123): warning:  #188-D: enumerated type mixed with another type
+  	MPU6050_WriteReg(MPU_ID1,MPU6050_PWR_MGMT_2, 0x00);				//电源管理寄存器2，保持默认值0，所有轴均不待机
+Hardware\HC_SR04.c(124): error:  #20: identifier "MPU6050_SMPLRT_DIV" is undefined
+  	MPU6050_WriteReg(MPU_ID1,MPU6050_SMPLRT_DIV, 0x09);				//采样率分频寄存器，配置采样率
+Hardware\HC_SR04.c(124): warning:  #188-D: enumerated type mixed with another type
+  	MPU6050_WriteReg(MPU_ID1,MPU6050_SMPLRT_DIV, 0x09);				//采样率分频寄存器，配置采样率
+Hardware\HC_SR04.c(125): error:  #20: identifier "MPU6050_CONFIG" is undefined
+  	MPU6050_WriteReg(MPU_ID1,MPU6050_CONFIG, 0x06);					//配置寄存器，配置DLPF
+Hardware\HC_SR04.c(125): warning:  #188-D: enumerated type mixed with another type
+  	MPU6050_WriteReg(MPU_ID1,MPU6050_CONFIG, 0x06);					//配置寄存器，配置DLPF
+Hardware\HC_SR04.c(126): error:  #20: identifier "MPU6050_GYRO_CONFIG" is undefined
+  	MPU6050_WriteReg(MPU_ID1,MPU6050_GYRO_CONFIG, 0x18);			//陀螺仪配置寄存器，选择满量程为±2000°/s
+Hardware\HC_SR04.c(126): warning:  #188-D: enumerated type mixed with another type
+  	MPU6050_WriteReg(MPU_ID1,MPU6050_GYRO_CONFIG, 0x18);			//陀螺仪配置寄存器，选择满量程为±2000°/s
+Hardware\HC_SR04.c(127): error:  #20: identifier "MPU6050_ACCEL_CONFIG" is undefined
+  	MPU6050_WriteReg(MPU_ID1,MPU6050_ACCEL_CONFIG, 0x18);			//加速度计配置寄存器，选择满量程为±16g
+Hardware\HC_SR04.c(127): warning:  #188-D: enumerated type mixed with another type
+  	MPU6050_WriteReg(MPU_ID1,MPU6050_ACCEL_CONFIG, 0x18);			//加速度计配置寄存器，选择满量程为±16g
+Hardware\HC_SR04.c(139): error:  #20: identifier "MPU6050_WHO_AM_I" is undefined
+  	return MPU6050_ReadReg( MPU6050_ADDRESS,MPU6050_WHO_AM_I);		//返回WHO_AM_I寄存器的值
+Hardware\HC_SR04.c(153): error:  #20: identifier "MPU6050_ACCEL_XOUT_H" is undefined
+  	DataH = MPU6050_ReadReg(MPU6050_ADDRESS,MPU6050_ACCEL_XOUT_H);		//读取加速度计X轴的高8位数据
+Hardware\HC_SR04.c(154): error:  #20: identifier "MPU6050_ACCEL_XOUT_L" is undefined
+  	DataL = MPU6050_ReadReg(MPU6050_ADDRESS,MPU6050_ACCEL_XOUT_L);		//读取加速度计X轴的低8位数据
+Hardware\HC_SR04.c(157): error:  #20: identifier "MPU6050_ACCEL_YOUT_H" is undefined
+  	DataH = MPU6050_ReadReg(MPU6050_ADDRESS,MPU6050_ACCEL_YOUT_H);		//读取加速度计Y轴的高8位数据
+Hardware\HC_SR04.c(158): error:  #20: identifier "MPU6050_ACCEL_YOUT_L" is undefined
+  	DataL = MPU6050_ReadReg(MPU6050_ADDRESS,MPU6050_ACCEL_YOUT_L);		//读取加速度计Y轴的低8位数据
+Hardware\HC_SR04.c(161): error:  #20: identifier "MPU6050_ACCEL_ZOUT_H" is undefined
+  	DataH = MPU6050_ReadReg(MPU6050_ADDRESS,MPU6050_ACCEL_ZOUT_H);		//读取加速度计Z轴的高8位数据
+Hardware\HC_SR04.c(162): error:  #20: identifier "MPU6050_ACCEL_ZOUT_L" is undefined
+  	DataL = MPU6050_ReadReg(MPU6050_ADDRESS,MPU6050_ACCEL_ZOUT_L);		//读取加速度计Z轴的低8位数据
+Hardware\HC_SR04.c(165): error:  #20: identifier "MPU6050_GYRO_XOUT_H" is undefined
+  	DataH = MPU6050_ReadReg(MPU6050_ADDRESS,MPU6050_GYRO_XOUT_H);		//读取陀螺仪X轴的高8位数据
+Hardware\HC_SR04.c(166): error:  #20: identifier "MPU6050_GYRO_XOUT_L" is undefined
+  	DataL = MPU6050_ReadReg(MPU6050_ADDRESS,MPU6050_GYRO_XOUT_L);		//读取陀螺仪X轴的低8位数据
+Hardware\HC_SR04.c(169): error:  #20: identifier "MPU6050_GYRO_YOUT_H" is undefined
+  	DataH = MPU6050_ReadReg(MPU6050_ADDRESS,MPU6050_GYRO_YOUT_H);		//读取陀螺仪Y轴的高8位数据
+Hardware\HC_SR04.c(170): error:  #20: identifier "MPU6050_GYRO_YOUT_L" is undefined
+  	DataL = MPU6050_ReadReg(MPU6050_ADDRESS,MPU6050_GYRO_YOUT_L);		//读取陀螺仪Y轴的低8位数据
+Hardware\HC_SR04.c(173): error:  #20: identifier "MPU6050_GYRO_ZOUT_H" is undefined
+  	DataH = MPU6050_ReadReg(MPU6050_ADDRESS,MPU6050_GYRO_ZOUT_H);		//读取陀螺仪Z轴的高8位数据
+Hardware\HC_SR04.c(174): error:  #20: identifier "MPU6050_GYRO_ZOUT_L" is undefined
+  	DataL = MPU6050_ReadReg(MPU6050_ADDRESS,MPU6050_GYRO_ZOUT_L);		//读取陀螺仪Z轴的低8位数据
+Hardware\HC_SR04.c(177): warning:  #1-D: last line of file ends without a newline
+  }
+Hardware\HC_SR04.c: 7 warnings, 22 errors
+compiling MPU6050.c...
+Hardware\MPU6050.c(122): error:  #20: identifier "MPU_ID1" is undefined
+  	MPU6050_WriteReg(MPU_ID1,MPU6050_PWR_MGMT_1, 0x01);				//鐢垫簮绠＄悊瀵勫瓨鍣?1锛屽彇娑堢潯鐪犳ā寮忥紝閫夋嫨鏃堕挓婧愪负X杞撮檧铻轰华
+Hardware\MPU6050.c(131): error:  #20: identifier "MPU_ID2" is undefined
+  	MPU6050_WriteReg(MPU_ID2,MPU6050_PWR_MGMT_1, 0x01);				//鐢垫簮绠＄悊瀵勫瓨鍣?1锛屽彇娑堢潯鐪犳ā寮忥紝閫夋嫨鏃堕挓婧愪负X杞撮檧铻轰华
+Hardware\MPU6050.c: 0 warnings, 2 errors
+".\Objects\Project.axf" - 26 Error(s), 7 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F1xx_DFP.2.2.0.pack
+                Keil::STM32F1xx_DFP@2.2.0
+                STMicroelectronics STM32F1 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  D:/Keil5 MDK/ARM/PACK/Keil/STM32F1xx_DFP/2.2.0/Device/Include
+
+<h2>Collection of Component Files used:</h2>
+Target not created.
+Build Time Elapsed:  00:00:00
+</pre>
+</body>
+</html>

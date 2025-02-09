@@ -1,0 +1,118 @@
+<html>
+<body>
+<pre>
+<h1>µVision Build Log</h1>
+<h2>Tool Versions:</h2>
+IDE-Version: ¦ÌVision V5.39.0.0
+Copyright (C) 2023 ARM Ltd and ARM Germany GmbH. All rights reserved.
+License Information: A lenovo, A, LIC=6XJT4-FHLHS-UMT9A-1IBEQ-ISF4Z-XUYWR
+ 
+Tool Versions:
+Toolchain:       MDK-ARM Professional  Version: 5.39.0.0
+Toolchain Path:  D:\Keil5 MDK\ARM\ARMCC\Bin
+C Compiler:      Armcc.exe V5.06 update 5 (build 528)
+Assembler:       Armasm.exe V5.06 update 5 (build 528)
+Linker/Locator:  ArmLink.exe V5.06 update 5 (build 528)
+Library Manager: ArmAr.exe V5.06 update 5 (build 528)
+Hex Converter:   FromElf.exe V5.06 update 5 (build 528)
+CPU DLL:         SARMCM3.DLL V5.39.0.0
+Dialog DLL:      DCM.DLL V1.17.5.0
+Target DLL:      CMSIS_AGDI.dll V1.33.16.0
+Dialog DLL:      TCM.DLL V1.56.4.0
+ 
+<h2>Project:</h2>
+C:\Users\lenovo\Desktop\shoot - mapan - DL\MDK-ARM\can_motor_self.uvprojx
+Project File Date:  12/10/2024
+
+<h2>Output:</h2>
+*** Using Compiler 'V5.06 update 5 (build 528)', folder: 'D:\Keil5 MDK\ARM\ARMCC\Bin'
+Build target 'can_motor_self'
+compiling motor.c...
+..\user\motor\motor.c(97): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		wheel_speed[0] = dirt[0] * sqrt(	pow(vy_set - wz_set* 
+_ANGLE ,2)+	pow(vx_set + wz_set* W_ANGLE ,2)) * wheel_rpm_ratio ;
+..\user\motor\motor.c(97): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+  		wheel_speed[0] = dirt[0] * sqrt(	pow(vy_set - wz_set* 
+_ANGLE ,2)+	pow(vx_set + wz_set* 
+_ANGLE ,2)) * wheel_rpm_ratio ;
+..\user\motor\motor.c(98): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      wheel_speed[1] = dirt[1] * sqrt(	pow(vy_set + wz_set* 
+_ANGLE ,2)+	pow(vx_set + wz_set* W_ANGLE ,2)) * wheel_rpm_ratio	;
+..\user\motor\motor.c(98): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      wheel_speed[1] = dirt[1] * sqrt(	pow(vy_set + wz_set* 
+_ANGLE ,2)+	pow(vx_set + wz_set* 
+_ANGLE ,2)) * wheel_rpm_ratio	;
+..\user\motor\motor.c(99): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      wheel_speed[2] = dirt[2] * sqrt(	pow(vy_set + wz_set* 
+_ANGLE ,2)+	pow(vx_set - wz_set* W_ANGLE ,2))	* wheel_rpm_ratio;
+..\user\motor\motor.c(99): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      wheel_speed[2] = dirt[2] * sqrt(	pow(vy_set + wz_set* 
+_ANGLE ,2)+	pow(vx_set - wz_set* 
+_ANGLE ,2))	* wheel_rpm_ratio;
+..\user\motor\motor.c(100): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      wheel_speed[3] = dirt[3] * sqrt(	pow(vy_set - wz_set* 
+_ANGLE ,2)+	pow(vx_set - wz_set* W_ANGLE ,2)) * wheel_rpm_ratio;
+..\user\motor\motor.c(100): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+      wheel_speed[3] = dirt[3] * sqrt(	pow(vy_set - wz_set* 
+_ANGLE ,2)+	pow(vx_set - wz_set* 
+_ANGLE ,2)) * wheel_rpm_ratio;
+..\user\motor\motor.c(113): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        atan_angle[0] = atan2((vy_set - wz_set  * 
+_ANGLE),(vx_set + wz_set  * W_ANGLE)) * 180.0f / PI;		
+..\user\motor\motor.c(113): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        atan_angle[0] = atan2((vy_set - wz_set  * 
+_ANGLE),(vx_set + wz_set  * 
+_ANGLE)) * 180.0f / PI;		
+..\user\motor\motor.c(114): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        atan_angle[1] = atan2((vy_set - wz_set  * 
+_ANGLE),(vx_set - wz_set  * W_ANGLE)) * 180.0f / PI;
+..\user\motor\motor.c(114): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        atan_angle[1] = atan2((vy_set - wz_set  * 
+_ANGLE),(vx_set - wz_set  * 
+_ANGLE)) * 180.0f / PI;
+..\user\motor\motor.c(115): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        atan_angle[2] = atan2((vy_set + wz_set  * 
+_ANGLE),(vx_set + wz_set  * W_ANGLE)) * 180.0f / PI;
+..\user\motor\motor.c(115): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        atan_angle[2] = atan2((vy_set + wz_set  * 
+_ANGLE),(vx_set + wz_set  * 
+_ANGLE)) * 180.0f / PI;
+..\user\motor\motor.c(116): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        atan_angle[3] = atan2((vy_set + wz_set  * 
+_ANGLE),(vx_set - wz_set  * W_ANGLE)) * 180.0f / PI;	
+..\user\motor\motor.c(116): warning:  #1035-D: single-precision operand implicitly converted to double-precision
+        atan_angle[3] = atan2((vy_set + wz_set  * 
+_ANGLE),(vx_set - wz_set  * 
+_ANGLE)) * 180.0f / PI;	
+..\user\motor\motor.c: 16 warnings, 0 errors
+linking...
+Program Size: Code=33126 RO-data=826 RW-data=104 ZI-data=6816  
+FromELF: creating hex file...
+"can_motor_self\can_motor_self.axf" - 0 Error(s), 16 Warning(s).
+
+<h2>Software Packages used:</h2>
+
+Package Vendor: ARM
+                http://www.keil.com/pack/ARM.CMSIS.5.9.0.pack
+                ARM::CMSIS@5.9.0
+                CMSIS (Common Microcontroller Software Interface Standard)
+   * Component: CORE Version: 5.6.0
+
+Package Vendor: Keil
+                http://www.keil.com/pack/Keil.STM32F4xx_DFP.2.13.0.pack
+                Keil::STM32F4xx_DFP@2.13.0
+                STMicroelectronics STM32F4 Series Device Support, Drivers and Examples
+
+<h2>Collection of Component include folders:</h2>
+  ./RTE/_can_motor_self
+  D:/Keil5 MDK/ARM/PACK/ARM/CMSIS/5.9.0/CMSIS/Core/Include
+  D:/Keil5 MDK/ARM/PACK/Keil/STM32F4xx_DFP/2.13.0/Drivers/CMSIS/Device/ST/STM32F4xx/Include
+
+<h2>Collection of Component Files used:</h2>
+
+   * Component: ARM::CMSIS:CORE@5.6.0
+      Include file:  CMSIS/Core/Include/tz_context.h
+Build Time Elapsed:  00:00:02
+</pre>
+</body>
+</html>

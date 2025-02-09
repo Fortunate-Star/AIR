@@ -1,0 +1,38 @@
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ..\user\mpu6050\inv_mpu_dmp_motion_driver.c
+wheat_wheel\inv_mpu_dmp_motion_driver.o: D:\Keil5 MDK\ARM\ARMCC\Bin\..\include\stdio.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: D:\Keil5 MDK\ARM\ARMCC\Bin\..\include\stdint.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: D:\Keil5 MDK\ARM\ARMCC\Bin\..\include\stdlib.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: D:\Keil5 MDK\ARM\ARMCC\Bin\..\include\string.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: D:\Keil5 MDK\ARM\ARMCC\Bin\..\include\math.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ..\user\mpu6050\inv_mpu.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Core/Inc/stm32f1xx_hal_conf.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_def.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f1xx.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/stm32f103xb.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/CMSIS/Include/core_cm3.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/CMSIS/Include/cmsis_version.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/CMSIS/Device/ST/STM32F1xx/Include/system_stm32f1xx.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: D:\Keil5 MDK\ARM\ARMCC\Bin\..\include\stddef.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_rcc_ex.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_gpio_ex.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_exti.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_dma_ex.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_cortex.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_flash_ex.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_i2c.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_pwr.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_tim_ex.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ../Drivers/STM32F1xx_HAL_Driver/Inc/stm32f1xx_hal_uart.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ..\user\mpu6050\inv_mpu_dmp_motion_driver.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ..\user\mpu6050\dmpKey.h
+wheat_wheel\inv_mpu_dmp_motion_driver.o: ..\user\mpu6050\dmpmap.h

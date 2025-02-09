@@ -1,0 +1,31 @@
+usarta\drv_bsp.o: ..\User\drv_bsp.c
+usarta\drv_bsp.o: ..\User\drv_bsp.h
+usarta\drv_bsp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+usarta\drv_bsp.o: ../Core/Inc/stm32f4xx_hal_conf.h
+usarta\drv_bsp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h
+usarta\drv_bsp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h
+usarta\drv_bsp.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
+usarta\drv_bsp.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f427xx.h
+usarta\drv_bsp.o: ../Drivers/CMSIS/Include/core_cm4.h
+usarta\drv_bsp.o: D:\Keil5 MDK\ARM\ARMCC\Bin\..\include\stdint.h
+usarta\drv_bsp.o: ../Drivers/CMSIS/Include/cmsis_version.h
+usarta\drv_bsp.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
+usarta\drv_bsp.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
+usarta\drv_bsp.o: ../Drivers/CMSIS/Include/mpu_armv7.h
+usarta\drv_bsp.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
+usarta\drv_bsp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
+usarta\drv_bsp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
+usarta\drv_bsp.o: D:\Keil5 MDK\ARM\ARMCC\Bin\..\include\stddef.h
+usarta\drv_bsp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
+usarta\drv_bsp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
+usarta\drv_bsp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
+usarta\drv_bsp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
+usarta\drv_bsp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
+usarta\drv_bsp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
+usarta\drv_bsp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+usarta\drv_bsp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
+usarta\drv_bsp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
+usarta\drv_bsp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
+usarta\drv_bsp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
+usarta\drv_bsp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
+usarta\drv_bsp.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
